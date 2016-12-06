@@ -5,7 +5,7 @@ using Nancy.Owin;
 using Nancy;
 using Nancy.ViewEngines.Razor;
 
-namespace EnterNamespaceHere //replace with your desired namespace
+namespace Inventory
 {
   public class Startup
   {
@@ -16,7 +16,7 @@ namespace EnterNamespaceHere //replace with your desired namespace
   }
   public static class DBConfiguration
   {
-      public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=XXXX;Integrated Security=SSPI;";
+      public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=inventory;Integrated Security=SSPI;";
   }
   public class CustomRootPathProvider : IRootPathProvider
   {
